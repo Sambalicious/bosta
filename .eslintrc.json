@@ -14,7 +14,8 @@
     "plugin:import/typescript",
     "plugin:sonarjs/recommended",
     "plugin:security/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "prettier-plugin-tailwindcss"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
