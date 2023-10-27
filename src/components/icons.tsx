@@ -1,4 +1,5 @@
 import {
+  Loader2,
   MoveLeft,
   Search,
   SlidersHorizontal,
@@ -11,4 +12,5 @@ export const Icons = {
   Filter: SlidersHorizontal,
   Search,
   Back: MoveLeft,
+  Spinner: Loader2,
 };
