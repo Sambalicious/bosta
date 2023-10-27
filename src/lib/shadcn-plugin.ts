@@ -18,7 +18,7 @@ export const shadcnPlugin = plugin(
         "--card-foreground": "0 0% 3.9%",
         "--border": "0 0% 89.8%",
         "--input": "0 0% 89.8%",
-        "--primary": "246, 91%, 61%",
+        "--primary": "207, 96%, 44%, 1",
         "--primary-foreground": "270, 25%, 98%",
         "--secondary": "0 0% 96.1%",
         "--secondary-foreground": "0 0% 9%",
@@ -89,8 +89,9 @@ export const shadcnPlugin = plugin(
           background: "hsla(var(--background))",
           foreground: "hsla(var(--foreground))",
           primary: {
-            DEFAULT: "hsla(var(--purple))",
-            foreground: "hsla(var(--purple-foreground))",
+            DEFAULT: "hsla(var(--primary))",
+            foreground: "hsla(var(--primary-foreground))",
+            light: "hsla(var(--primary-light))",
           },
           blue: {
             DEFAULT: "hsla(var(--blue))",

@@ -7,13 +7,18 @@ export interface IAxios {
 }
 
 const instance = axios.create({
-  baseURL: "https://swapi.dev/api/", // process.env.NEXT_PUBLIC_BASE_URL,
+  baseURL: "https://www.googleapis.com/books/v1/volumes", // process.env.NEXT_PUBLIC_BASE_URL,
 });
 
 const api = (http: AxiosInstance) => {
   return {
     get: <T>({ url, config }: IAxios) => {
-      return http.get<T>(url, config);
+      return http.get<T>(url, {
+        params: {
+          ...config?.params,
+          key: "AIzaSyCNs1NTLVuUco0gYhGSbazX4XLXvuS7nEw",
+        },
+      });
     },
 
     delete: <T>({ url, config }: IAxios) => {
